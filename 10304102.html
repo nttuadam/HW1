@@ -1,51 +1,103 @@
-<style>
-h1 {text-align:center;margin:0px;color:blue;font-size:300%;}
-h2 {text-align:center;font-size:200%;color:red;}
-p {text-align:center;font-size:200%;color:#33cc33;}
-</style>
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="fancyapps-fancyBox-18d1712/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script src="fancyapps-fancyBox-18d1712/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 </head>
 <body>
-<div style="height:500px;background-color: #66ff66">
-		<h1>歡迎大家來這個網頁</h1>
-		<h2>一開始先為大家送上這張照片 這張照片代表著中信兄弟會一直改變 進化 越來越強</h2>
+
+<script>
+	alert("大家好~~~~");
+	function myFunc(){
+		alert("哈囉"+document.getElementById("name").value+"歡迎你~~~");
+	}
+</script>
+
+
+<div style="float:left;width:400px;height:550px;background-color: #66ff66">
+	<form>
+     	輸入你的名字:<input type="text" id = "name">
+	</form>
+
+	<button type="button" onclick="myFunc()">輸入!!!</button>
+</div>
+
+<div style="float:right;width:400px;height:550px;background-color:#66ff66">
+</div>
+
+<div style="height:550px;background-color:#66ff66">
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:250%;">歡迎大家來這個網頁</h1>
+		<h2 style="text-align:center;font-size:200%;color:red;">一開始先為大家送上這張照片 這張照片代表著中信兄弟會一直改變 進化 越來越強</h2>
 		<img src="2016.jpg" width="500" heigh="500" align="center">
 </div>
 
-<div style="float:left;width:400px;height:800px;background-color:#33ffff">
-		<h1>下面兩張圖片是過去的兄弟象與現在的中信兄弟</h1>
-		<img src="20161030.jpg" width="300" height="300">
-		<img src="201610.jpg" width="300" height="300">
+<div style="float:left;width:400px;height:700px;background-color:#33ffff">
+	<div style="height:350px;background-color: #33ffff">
+
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:150%;">下面兩張圖片是過去的兄弟象與現在的中信兄弟 可以點圖片放大觀看</h1>
+		<a class="fancybox" rel="group" href="images/20161030.jpg"><img src="images/20161030.jpg" height="150" width="150"/></a>
+		<a class="fancybox" rel="group" href="images/201610.jpg"><img src="images/201610.jpg" height="150" width="150"/></a>
+		<script>
+		$(document).ready(function() {
+		$(".fancybox").fancybox();
+		});
+		</script>
+	</div>
+	<div style="height:350px;background-color: #33ffff">
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:150%;">放上兄弟象最具代表性的人物...恰恰</h1>
+		<a class="fancybox" rel="group" href="images/20161225.jpg"><img src="images/20161225.jpg" height="150" width="200"/></a>
+		
+	</div>
 </div>
-<div style="float:right;width:400px;height:800px;background-color:#33ffff">
-	<h1>下面的職棒二十七年中信兄弟總冠軍賽年度主題曲</h1>
+<div style="float:right;width:400px;height:700px;background-color:#33ffff">
+	<h1 style="text-align:center;margin:0px;color:blue;font-size:150%;">下面的職棒二十七年中信兄弟總冠軍賽年度主題曲</h1>
 	<iframe width="400" height="500" src="https://www.youtube.com/embed/OccGgeHv-S0" frameborder="0" allowfullscreen></iframe>
 </div>
-<div style="height:800px;background-color:#ffff99">
-		<h1>兄弟的過去史</h1>
-		<p>兄弟象前身為兄弟飯店棒球隊，於1984年9月1日正式成立，從乙組成棒隊開始打起，最後成為台灣第一個由私人經營的甲組成棒隊勁旅。
+<div style="height:700px;background-color:#ffff99">
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:250%;">兄弟的過去史</h1>
+		<p style="text-align:center;font-size:150%;color:#33cc33;" id = "demo">兄弟象前身為兄弟飯店棒球隊，於1984年9月1日正式成立，從乙組成棒隊開始打起，最後成為台灣第一個由私人經營的甲組成棒隊勁旅。
         1986年兄弟龍潭棒球場完工啟用，兄弟象也成為中華職棒隊伍中，最後一支擁有自己的專屬場練習場地的球隊。
         1990年在兄弟大飯店董事長洪騰勝的促成之下，兄弟飯店棒球隊與味全龍、三商虎及統一獅一起加入職棒，成為中華職棒4支創始球隊之一。中華職棒成立後，兄弟飯店棒球隊改名為兄弟象。
-        2013年華翼育樂以新台幣4億元取得兄弟象隊10年冠名權與廣告合作權，接手兄弟象球團，改名為中信兄弟，其主要贊助商為中信金控。
+        2013年華翼育樂以新台幣4億元取得兄弟象隊10年冠名權與廣告合作權，接手兄弟象球團，改名為中信兄弟，其主要贊助商為中信金控。</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = '已轉售之兄弟象隊為4支創始球隊之一。1992－1994年創下空前的連續3年奪下台灣大賽冠軍之傲人成績（首度3連霸），1992年球季更創下了例行賽45場中37場封王達成中華職棒最快速封王的紀錄，且在當年度奪得中華職棒史上唯一的金冠軍。在2001年奪得隊史上的第4度年度台灣大賽冠軍，此後並在2002、2003年連續奪得了台灣大賽冠軍、為第2次3連霸，僅次於統一7-ELEVEn獅隊，為中華職棒史上奪得台灣大賽冠軍次數第2多的球隊，同時也是目前唯一兩度締造3連霸紀錄的球隊。隨後也在2010年達成了隊史千勝，為中職聯盟唯2球隊達成，2010年下半季更取得隊史第11座季冠軍，同年台灣大賽以4連勝橫掃興農牛隊，奪下隊史第7座總冠軍。但於2011、2012、2013年皆在下半季爭冠期間喪失機會，於是無緣再打入台灣大賽。 2013年10月19日兄弟象董事長洪瑞河宣布因不敷虧損，家族會議後（洪家5兄弟）決定轉賣，12月3日公布新東家，由中國信託銀行贊助的華翼育樂接手；原兄弟象球團董事長洪瑞河在12月13日舉行惜別宴，在會中象徵性的交棒給華翼育樂董事長林逢春。'">知道更多!</button>
+
         <br>
-        <a href="https://www.brothers.tw/"><b>點我可以看到中信兄弟的官網哦~</b></a>
+        <a href="https://www.brothers.tw/"><font size="6">點我可以看到中信兄弟的官網哦~</font></a>
 </div>
-<div style="height:700px;background-color:#66ccff">
-		<h1>恭喜中信兄弟或的2016上半季冠軍</h1>
-		<iframe width="800" height="500" src="https://www.youtube.com/embed/UC5bInTjKBo" frameborder="0" allowfullscreen></iframe>
+<div style="float:left;width:350px;height:600px;background-color:#66ccff">
 </div>
-<div style="height:700px;background-color: #6699ff">
-		<h1>但是就在昨天...中信兄弟輸掉了總冠軍</h1>
-		<h2>網路紅人蔡阿嘎也是忠實象迷 也拍下了的感受</h2>
-        <iframe width="800" height="400" src="https://www.youtube.com/embed/QfrI-uiP9A4" frameborder="0" allowfullscreen></iframe>
+<div style="float:right;width:350px;height:600px;background-color:#66ccff">
 </div>
-<div style="height:150px;background-color:#0033cc">
-		<h1>雖然我們輸了 而且還被嘲笑3連亞</h1>
-		<h2>但我相信兄弟的球迷不會這樣就放棄的 明年我們會繼續加油的</h2>
+<div style="height:600px;background-color:#66ccff">
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:300%;">恭喜中信兄弟或的2016上半季冠軍</h1>
+		<iframe width="600" height="400" src="https://www.youtube.com/embed/UC5bInTjKBo" ></iframe>
 </div>
-
-
+<div style="float:left;width:350px;height:600px;background-color:#6699ff">
+</div>
+<div style="float:right;width:350px;height:600px;background-color:#6699ff">
+</div>
+<div style="height:600px;background-color: #6699ff">
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:200%;">但是就在昨天...中信兄弟輸掉了總冠軍</h1>
+		<h2 style="text-align:center;font-size:150%;color:red;">網路紅人蔡阿嘎也是忠實象迷 也拍下了的感受</h2>
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/QfrI-uiP9A4" ></iframe>
+</div>
+<div style="height:150px;background-color:#b8b894">
+		<h1 style="text-align:center;margin:0px;color:blue;font-size:200%;">雖然我們輸了 而且還被嘲笑3連亞</h1>
+		<h2 style="text-align:center;font-size:150%;color:red;">但我相信兄弟的球迷不會這樣就放棄的 明年我們會繼續加油的</h2>
+		<script>
+		var d = new Date();
+		var time = d.getHours();
+		if (time<10) {
+		document.write("<b>早安!</b>");
+		}
+		else if (time>=10 && time<18) {
+		document.write("<b>Good day</b>");
+		}
+		else {
+		document.write("<b>晚安!</b>");
+		}
+		</script>
+</div>
 </body>
 </html>
